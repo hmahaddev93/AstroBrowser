@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43E805C4EC606FFFDA32FB3E /* Pods_AstroBrowser_AstroBrowserUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD81D765C7E7A42BC76ED480 /* Pods_AstroBrowser_AstroBrowserUITests.framework */; };
+		6B226E962759AA24000CD2EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226E952759AA24000CD2EF /* AppDelegate.swift */; };
+		6B226E9A2759AA24000CD2EF /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226E992759AA24000CD2EF /* FeedViewController.swift */; };
+		6B226EA02759AA24000CD2EF /* AstroBrowser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B226E9E2759AA24000CD2EF /* AstroBrowser.xcdatamodeld */; };
+		6B226EA22759AA25000CD2EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B226EA12759AA25000CD2EF /* Assets.xcassets */; };
+		6B226EA52759AA25000CD2EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B226EA32759AA25000CD2EF /* LaunchScreen.storyboard */; };
+		6B226EBA2759AA25000CD2EF /* AstroBrowserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226EB92759AA25000CD2EF /* AstroBrowserUITests.swift */; };
+		6B226EBC2759AA25000CD2EF /* AstroBrowserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226EBB2759AA25000CD2EF /* AstroBrowserUITestsLaunchTests.swift */; };
+		6B226ECC2759AADC000CD2EF /* HTTPResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226EC82759AADC000CD2EF /* HTTPResponseHandler.swift */; };
+		6B226ECD2759AADC000CD2EF /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226EC92759AADC000CD2EF /* HTTPRequest.swift */; };
+		6B226ECE2759AADC000CD2EF /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226ECA2759AADC000CD2EF /* HTTPClient.swift */; };
+		6B226ECF2759AADC000CD2EF /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226ECB2759AADC000CD2EF /* HTTPError.swift */; };
+		6B226ED32759B06F000CD2EF /* Astronomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226ED22759B06F000CD2EF /* Astronomy.swift */; };
+		6B226EDC2759CEC6000CD2EF /* SessionManager_Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226EDB2759CEC6000CD2EF /* SessionManager_Protocol.swift */; };
+		6B226EE02759CF6F000CD2EF /* AstroPicturesSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226EDF2759CF6F000CD2EF /* AstroPicturesSectionController.swift */; };
+		6B226EE3275A1EA1000CD2EF /* AstroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226EE2275A1EA1000CD2EF /* AstroCell.swift */; };
+		6B226EE6275A1F50000CD2EF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226EE5275A1F50000CD2EF /* Theme.swift */; };
+		6B226EE9275A5B7E000CD2EF /* NASAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226EE8275A5B7E000CD2EF /* NASAService.swift */; };
+		6B226EEB275A7D58000CD2EF /* NSObject+ListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226EEA275A7D58000CD2EF /* NSObject+ListDiffable.swift */; };
+		6B226EED275A8A80000CD2EF /* AstroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226EEC275A8A80000CD2EF /* AstroDetailViewController.swift */; };
+		6B226EF3275A9D82000CD2EF /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226EF2275A9D82000CD2EF /* FeedViewModel.swift */; };
+		6B226EF5275A9FC8000CD2EF /* AstronomyModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B226EF4275A9FC8000CD2EF /* AstronomyModelTest.swift */; };
+		C5435D36B0027BB61FC1CEAB /* Pods_AstroBrowserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74434D40E2E003E6B1594973 /* Pods_AstroBrowserTests.framework */; };
+		E01ACB0B5DB954D265ACA1F6 /* Pods_AstroBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA67C73AE384BB68B07149F /* Pods_AstroBrowser.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B226EAC2759AA25000CD2EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B226E8A2759AA24000CD2EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B226E912759AA24000CD2EF;
+			remoteInfo = AstroBrowser;
+		};
+		6B226EB62759AA25000CD2EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B226E8A2759AA24000CD2EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B226E912759AA24000CD2EF;
+			remoteInfo = AstroBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08E050455237005D14E6ACB3 /* Pods-AstroBrowserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroBrowserTests.debug.xcconfig"; path = "Target Support Files/Pods-AstroBrowserTests/Pods-AstroBrowserTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F6FAD8F925A0A32330A7C0D /* Pods-AstroBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroBrowser.release.xcconfig"; path = "Target Support Files/Pods-AstroBrowser/Pods-AstroBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		6B226E922759AA24000CD2EF /* AstroBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B226E952759AA24000CD2EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6B226E992759AA24000CD2EF /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		6B226E9F2759AA24000CD2EF /* AstroBrowser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AstroBrowser.xcdatamodel; sourceTree = "<group>"; };
+		6B226EA12759AA25000CD2EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B226EA42759AA25000CD2EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B226EA62759AA25000CD2EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B226EAB2759AA25000CD2EF /* AstroBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B226EB52759AA25000CD2EF /* AstroBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B226EB92759AA25000CD2EF /* AstroBrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroBrowserUITests.swift; sourceTree = "<group>"; };
+		6B226EBB2759AA25000CD2EF /* AstroBrowserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroBrowserUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6B226EC82759AADC000CD2EF /* HTTPResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseHandler.swift; sourceTree = "<group>"; };
+		6B226EC92759AADC000CD2EF /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		6B226ECA2759AADC000CD2EF /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		6B226ECB2759AADC000CD2EF /* HTTPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		6B226ED22759B06F000CD2EF /* Astronomy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronomy.swift; sourceTree = "<group>"; };
+		6B226EDB2759CEC6000CD2EF /* SessionManager_Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager_Protocol.swift; sourceTree = "<group>"; };
+		6B226EDF2759CF6F000CD2EF /* AstroPicturesSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroPicturesSectionController.swift; sourceTree = "<group>"; };
+		6B226EE2275A1EA1000CD2EF /* AstroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroCell.swift; sourceTree = "<group>"; };
+		6B226EE5275A1F50000CD2EF /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		6B226EE8275A5B7E000CD2EF /* NASAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAService.swift; sourceTree = "<group>"; };
+		6B226EEA275A7D58000CD2EF /* NSObject+ListDiffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ListDiffable.swift"; sourceTree = "<group>"; };
+		6B226EEC275A8A80000CD2EF /* AstroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroDetailViewController.swift; sourceTree = "<group>"; };
+		6B226EF2275A9D82000CD2EF /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		6B226EF4275A9FC8000CD2EF /* AstronomyModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyModelTest.swift; sourceTree = "<group>"; };
+		74434D40E2E003E6B1594973 /* Pods_AstroBrowserTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstroBrowserTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74E4FD0FF3FBCF997CF98E4A /* Pods-AstroBrowser-AstroBrowserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroBrowser-AstroBrowserUITests.debug.xcconfig"; path = "Target Support Files/Pods-AstroBrowser-AstroBrowserUITests/Pods-AstroBrowser-AstroBrowserUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EA67C73AE384BB68B07149F /* Pods_AstroBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstroBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD81D765C7E7A42BC76ED480 /* Pods_AstroBrowser_AstroBrowserUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstroBrowser_AstroBrowserUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84B621B1EB522555C9575E1 /* Pods-AstroBrowser-AstroBrowserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroBrowser-AstroBrowserUITests.release.xcconfig"; path = "Target Support Files/Pods-AstroBrowser-AstroBrowserUITests/Pods-AstroBrowser-AstroBrowserUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E56661DB9B993709EDA5ED04 /* Pods-AstroBrowserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroBrowserTests.release.xcconfig"; path = "Target Support Files/Pods-AstroBrowserTests/Pods-AstroBrowserTests.release.xcconfig"; sourceTree = "<group>"; };
+		F12523CC050CC1AAE4EAE29C /* Pods-AstroBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroBrowser.debug.xcconfig"; path = "Target Support Files/Pods-AstroBrowser/Pods-AstroBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B226E8F2759AA24000CD2EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01ACB0B5DB954D265ACA1F6 /* Pods_AstroBrowser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B226EA82759AA25000CD2EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5435D36B0027BB61FC1CEAB /* Pods_AstroBrowserTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B226EB22759AA25000CD2EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E805C4EC606FFFDA32FB3E /* Pods_AstroBrowser_AstroBrowserUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1315244FE18416ACA54473F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F12523CC050CC1AAE4EAE29C /* Pods-AstroBrowser.debug.xcconfig */,
+				4F6FAD8F925A0A32330A7C0D /* Pods-AstroBrowser.release.xcconfig */,
+				74E4FD0FF3FBCF997CF98E4A /* Pods-AstroBrowser-AstroBrowserUITests.debug.xcconfig */,
+				C84B621B1EB522555C9575E1 /* Pods-AstroBrowser-AstroBrowserUITests.release.xcconfig */,
+				08E050455237005D14E6ACB3 /* Pods-AstroBrowserTests.debug.xcconfig */,
+				E56661DB9B993709EDA5ED04 /* Pods-AstroBrowserTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6B226E892759AA24000CD2EF = {
+			isa = PBXGroup;
+			children = (
+				6B226E942759AA24000CD2EF /* AstroBrowser */,
+				6B226EAE2759AA25000CD2EF /* AstroBrowserTests */,
+				6B226EB82759AA25000CD2EF /* AstroBrowserUITests */,
+				6B226E932759AA24000CD2EF /* Products */,
+				1315244FE18416ACA54473F0 /* Pods */,
+				91B17E0F0AA80BE0E857BE71 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B226E932759AA24000CD2EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B226E922759AA24000CD2EF /* AstroBrowser.app */,
+				6B226EAB2759AA25000CD2EF /* AstroBrowserTests.xctest */,
+				6B226EB52759AA25000CD2EF /* AstroBrowserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B226E942759AA24000CD2EF /* AstroBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				6B226EE4275A1F36000CD2EF /* Common */,
+				6B226EE1275A1D3B000CD2EF /* Views */,
+				6B226ED42759B13C000CD2EF /* ViewControllers */,
+				6B226ED12759B018000CD2EF /* Model */,
+				6B226ED02759AAE6000CD2EF /* HTTPClient */,
+				6B226EE7275A5B62000CD2EF /* Service */,
+				6B226E952759AA24000CD2EF /* AppDelegate.swift */,
+				6B226EA12759AA25000CD2EF /* Assets.xcassets */,
+				6B226EA32759AA25000CD2EF /* LaunchScreen.storyboard */,
+				6B226EA62759AA25000CD2EF /* Info.plist */,
+				6B226E9E2759AA24000CD2EF /* AstroBrowser.xcdatamodeld */,
+			);
+			path = AstroBrowser;
+			sourceTree = "<group>";
+		};
+		6B226EAE2759AA25000CD2EF /* AstroBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B226EF4275A9FC8000CD2EF /* AstronomyModelTest.swift */,
+			);
+			path = AstroBrowserTests;
+			sourceTree = "<group>";
+		};
+		6B226EB82759AA25000CD2EF /* AstroBrowserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6B226EB92759AA25000CD2EF /* AstroBrowserUITests.swift */,
+				6B226EBB2759AA25000CD2EF /* AstroBrowserUITestsLaunchTests.swift */,
+			);
+			path = AstroBrowserUITests;
+			sourceTree = "<group>";
+		};
+		6B226ED02759AAE6000CD2EF /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				6B226ECA2759AADC000CD2EF /* HTTPClient.swift */,
+				6B226ECB2759AADC000CD2EF /* HTTPError.swift */,
+				6B226EC92759AADC000CD2EF /* HTTPRequest.swift */,
+				6B226EC82759AADC000CD2EF /* HTTPResponseHandler.swift */,
+				6B226EDB2759CEC6000CD2EF /* SessionManager_Protocol.swift */,
+			);
+			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		6B226ED12759B018000CD2EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B226ED22759B06F000CD2EF /* Astronomy.swift */,
+				6B226EEA275A7D58000CD2EF /* NSObject+ListDiffable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B226ED42759B13C000CD2EF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B226EDD2759CF07000CD2EF /* Feed */,
+				6B226EDE2759CF12000CD2EF /* Detail */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6B226EDD2759CF07000CD2EF /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				6B226EF2275A9D82000CD2EF /* FeedViewModel.swift */,
+				6B226E992759AA24000CD2EF /* FeedViewController.swift */,
+				6B226EDF2759CF6F000CD2EF /* AstroPicturesSectionController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		6B226EDE2759CF12000CD2EF /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6B226EEC275A8A80000CD2EF /* AstroDetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		6B226EE1275A1D3B000CD2EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B226EE2275A1EA1000CD2EF /* AstroCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6B226EE4275A1F36000CD2EF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6B226EE5275A1F50000CD2EF /* Theme.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6B226EE7275A5B62000CD2EF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6B226EE8275A5B7E000CD2EF /* NASAService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		91B17E0F0AA80BE0E857BE71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EA67C73AE384BB68B07149F /* Pods_AstroBrowser.framework */,
+				BD81D765C7E7A42BC76ED480 /* Pods_AstroBrowser_AstroBrowserUITests.framework */,
+				74434D40E2E003E6B1594973 /* Pods_AstroBrowserTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B226E912759AA24000CD2EF /* AstroBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B226EBF2759AA25000CD2EF /* Build configuration list for PBXNativeTarget "AstroBrowser" */;
+			buildPhases = (
+				15A50BD8363BD178B0C7A02D /* [CP] Check Pods Manifest.lock */,
+				6B226E8E2759AA24000CD2EF /* Sources */,
+				6B226E8F2759AA24000CD2EF /* Frameworks */,
+				6B226E902759AA24000CD2EF /* Resources */,
+				C3D37438F5EBB74D059EDC5E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstroBrowser;
+			productName = AstroBrowser;
+			productReference = 6B226E922759AA24000CD2EF /* AstroBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B226EAA2759AA25000CD2EF /* AstroBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B226EC22759AA25000CD2EF /* Build configuration list for PBXNativeTarget "AstroBrowserTests" */;
+			buildPhases = (
+				04D287588D810B8DA522370C /* [CP] Check Pods Manifest.lock */,
+				6B226EA72759AA25000CD2EF /* Sources */,
+				6B226EA82759AA25000CD2EF /* Frameworks */,
+				6B226EA92759AA25000CD2EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B226EAD2759AA25000CD2EF /* PBXTargetDependency */,
+			);
+			name = AstroBrowserTests;
+			productName = AstroBrowserTests;
+			productReference = 6B226EAB2759AA25000CD2EF /* AstroBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6B226EB42759AA25000CD2EF /* AstroBrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B226EC52759AA25000CD2EF /* Build configuration list for PBXNativeTarget "AstroBrowserUITests" */;
+			buildPhases = (
+				E153448E662DD5260BFC816D /* [CP] Check Pods Manifest.lock */,
+				6B226EB12759AA25000CD2EF /* Sources */,
+				6B226EB22759AA25000CD2EF /* Frameworks */,
+				6B226EB32759AA25000CD2EF /* Resources */,
+				27F321ECF8A1E19D2B6F260F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B226EB72759AA25000CD2EF /* PBXTargetDependency */,
+			);
+			name = AstroBrowserUITests;
+			productName = AstroBrowserUITests;
+			productReference = 6B226EB52759AA25000CD2EF /* AstroBrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B226E8A2759AA24000CD2EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					6B226E912759AA24000CD2EF = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					6B226EAA2759AA25000CD2EF = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6B226E912759AA24000CD2EF;
+					};
+					6B226EB42759AA25000CD2EF = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 6B226E912759AA24000CD2EF;
+					};
+				};
+			};
+			buildConfigurationList = 6B226E8D2759AA24000CD2EF /* Build configuration list for PBXProject "AstroBrowser" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B226E892759AA24000CD2EF;
+			productRefGroup = 6B226E932759AA24000CD2EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B226E912759AA24000CD2EF /* AstroBrowser */,
+				6B226EAA2759AA25000CD2EF /* AstroBrowserTests */,
+				6B226EB42759AA25000CD2EF /* AstroBrowserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B226E902759AA24000CD2EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B226EA52759AA25000CD2EF /* LaunchScreen.storyboard in Resources */,
+				6B226EA22759AA25000CD2EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B226EA92759AA25000CD2EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B226EB32759AA25000CD2EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04D287588D810B8DA522370C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AstroBrowserTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15A50BD8363BD178B0C7A02D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AstroBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27F321ECF8A1E19D2B6F260F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstroBrowser-AstroBrowserUITests/Pods-AstroBrowser-AstroBrowserUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstroBrowser-AstroBrowserUITests/Pods-AstroBrowser-AstroBrowserUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AstroBrowser-AstroBrowserUITests/Pods-AstroBrowser-AstroBrowserUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3D37438F5EBB74D059EDC5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstroBrowser/Pods-AstroBrowser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AstroBrowser/Pods-AstroBrowser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AstroBrowser/Pods-AstroBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E153448E662DD5260BFC816D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AstroBrowser-AstroBrowserUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B226E8E2759AA24000CD2EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B226ECC2759AADC000CD2EF /* HTTPResponseHandler.swift in Sources */,
+				6B226EED275A8A80000CD2EF /* AstroDetailViewController.swift in Sources */,
+				6B226E9A2759AA24000CD2EF /* FeedViewController.swift in Sources */,
+				6B226EE3275A1EA1000CD2EF /* AstroCell.swift in Sources */,
+				6B226EDC2759CEC6000CD2EF /* SessionManager_Protocol.swift in Sources */,
+				6B226E962759AA24000CD2EF /* AppDelegate.swift in Sources */,
+				6B226ECE2759AADC000CD2EF /* HTTPClient.swift in Sources */,
+				6B226ED32759B06F000CD2EF /* Astronomy.swift in Sources */,
+				6B226ECF2759AADC000CD2EF /* HTTPError.swift in Sources */,
+				6B226EEB275A7D58000CD2EF /* NSObject+ListDiffable.swift in Sources */,
+				6B226EE02759CF6F000CD2EF /* AstroPicturesSectionController.swift in Sources */,
+				6B226ECD2759AADC000CD2EF /* HTTPRequest.swift in Sources */,
+				6B226EA02759AA24000CD2EF /* AstroBrowser.xcdatamodeld in Sources */,
+				6B226EE9275A5B7E000CD2EF /* NASAService.swift in Sources */,
+				6B226EF3275A9D82000CD2EF /* FeedViewModel.swift in Sources */,
+				6B226EE6275A1F50000CD2EF /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B226EA72759AA25000CD2EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B226EF5275A9FC8000CD2EF /* AstronomyModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B226EB12759AA25000CD2EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B226EBA2759AA25000CD2EF /* AstroBrowserUITests.swift in Sources */,
+				6B226EBC2759AA25000CD2EF /* AstroBrowserUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B226EAD2759AA25000CD2EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B226E912759AA24000CD2EF /* AstroBrowser */;
+			targetProxy = 6B226EAC2759AA25000CD2EF /* PBXContainerItemProxy */;
+		};
+		6B226EB72759AA25000CD2EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B226E912759AA24000CD2EF /* AstroBrowser */;
+			targetProxy = 6B226EB62759AA25000CD2EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B226EA32759AA25000CD2EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B226EA42759AA25000CD2EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B226EBD2759AA25000CD2EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B226EBE2759AA25000CD2EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B226EC02759AA25000CD2EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F12523CC050CC1AAE4EAE29C /* Pods-AstroBrowser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD2277U49U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AstroBrowser/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AstroBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B226EC12759AA25000CD2EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F6FAD8F925A0A32330A7C0D /* Pods-AstroBrowser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD2277U49U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AstroBrowser/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AstroBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B226EC32759AA25000CD2EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08E050455237005D14E6ACB3 /* Pods-AstroBrowserTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD2277U49U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AstroBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroBrowser.app/AstroBrowser";
+			};
+			name = Debug;
+		};
+		6B226EC42759AA25000CD2EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E56661DB9B993709EDA5ED04 /* Pods-AstroBrowserTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD2277U49U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AstroBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroBrowser.app/AstroBrowser";
+			};
+			name = Release;
+		};
+		6B226EC62759AA25000CD2EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74E4FD0FF3FBCF997CF98E4A /* Pods-AstroBrowser-AstroBrowserUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD2277U49U;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AstroBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AstroBrowser;
+			};
+			name = Debug;
+		};
+		6B226EC72759AA25000CD2EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C84B621B1EB522555C9575E1 /* Pods-AstroBrowser-AstroBrowserUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD2277U49U;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.AstroBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AstroBrowser;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B226E8D2759AA24000CD2EF /* Build configuration list for PBXProject "AstroBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B226EBD2759AA25000CD2EF /* Debug */,
+				6B226EBE2759AA25000CD2EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B226EBF2759AA25000CD2EF /* Build configuration list for PBXNativeTarget "AstroBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B226EC02759AA25000CD2EF /* Debug */,
+				6B226EC12759AA25000CD2EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B226EC22759AA25000CD2EF /* Build configuration list for PBXNativeTarget "AstroBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B226EC32759AA25000CD2EF /* Debug */,
+				6B226EC42759AA25000CD2EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B226EC52759AA25000CD2EF /* Build configuration list for PBXNativeTarget "AstroBrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B226EC62759AA25000CD2EF /* Debug */,
+				6B226EC72759AA25000CD2EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6B226E9E2759AA24000CD2EF /* AstroBrowser.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B226E9F2759AA24000CD2EF /* AstroBrowser.xcdatamodel */,
+			);
+			currentVersion = 6B226E9F2759AA24000CD2EF /* AstroBrowser.xcdatamodel */;
+			path = AstroBrowser.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6B226E8A2759AA24000CD2EF /* Project object */;
+}

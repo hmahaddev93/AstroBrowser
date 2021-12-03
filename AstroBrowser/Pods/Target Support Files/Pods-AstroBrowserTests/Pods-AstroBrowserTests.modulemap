@@ -1,0 +1,6 @@
+framework module Pods_AstroBrowserTests {
+  umbrella header "Pods-AstroBrowserTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

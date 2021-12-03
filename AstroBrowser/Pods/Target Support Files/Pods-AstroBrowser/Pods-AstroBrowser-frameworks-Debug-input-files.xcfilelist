@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-AstroBrowser/Pods-AstroBrowser-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/IGListDiffKit/IGListDiffKit.framework
+${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
